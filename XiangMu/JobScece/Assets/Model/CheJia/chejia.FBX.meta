@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: b90d7f16139e5c34fa1ee443b746e801
+timeCreated: 1447046612
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chejiazi
+    100004: chejiazi_MeshPart0
+    100006: chejiazi_MeshPart1
+    100008: chejiazi_MeshPart2
+    100010: Donut004
+    100012: Donut005
+    100014: Donut006
+    100016: Donut007
+    100018: Donut008
+    100020: Donut009
+    100022: Donut010
+    100024: Donut011
+    100026: Donut012
+    100028: Donut013
+    100030: Donut014
+    100032: Donut015
+    400000: //RootNode
+    400002: chejiazi
+    400004: chejiazi_MeshPart0
+    400006: chejiazi_MeshPart1
+    400008: chejiazi_MeshPart2
+    400010: Donut004
+    400012: Donut005
+    400014: Donut006
+    400016: Donut007
+    400018: Donut008
+    400020: Donut009
+    400022: Donut010
+    400024: Donut011
+    400026: Donut012
+    400028: Donut013
+    400030: Donut014
+    400032: Donut015
+    2300000: chejiazi_MeshPart0
+    2300002: chejiazi_MeshPart1
+    2300004: chejiazi_MeshPart2
+    2300006: Donut004
+    2300008: Donut005
+    2300010: Donut006
+    2300012: Donut007
+    2300014: Donut008
+    2300016: Donut009
+    2300018: Donut010
+    2300020: Donut011
+    2300022: Donut012
+    2300024: Donut013
+    2300026: Donut014
+    2300028: Donut015
+    3300000: chejiazi_MeshPart0
+    3300002: chejiazi_MeshPart1
+    3300004: chejiazi_MeshPart2
+    3300006: Donut004
+    3300008: Donut005
+    3300010: Donut006
+    3300012: Donut007
+    3300014: Donut008
+    3300016: Donut009
+    3300018: Donut010
+    3300020: Donut011
+    3300022: Donut012
+    3300024: Donut013
+    3300026: Donut014
+    3300028: Donut015
+    4300000: chejiazi_MeshPart0
+    4300002: chejiazi_MeshPart1
+    4300004: chejiazi_MeshPart2
+    4300006: Donut004
+    4300008: Donut005
+    4300010: Donut006
+    4300012: Donut007
+    4300014: Donut008
+    4300016: Donut009
+    4300018: Donut010
+    4300020: Donut011
+    4300022: Donut012
+    4300024: Donut013
+    4300026: Donut014
+    4300028: Donut015
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 431ed012d55adc441a2a5d79208d0c16
+timeCreated: 1447051015
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box01
+    100002: Box02
+    100004: Box20
+    100006: Box21
+    100008: Box22
+    100010: cgaxis_electronics_25_01
+    100012: cgaxis_electronics_25_02
+    100014: //RootNode
+    100016: Group21
+    100018: Group22
+    100020: Group23
+    100022: Group24
+    100024: 'jianpan '
+    100026: LCD_obj_04
+    100028: LCD_obj_05
+    100030: LCD_obj_06
+    100032: Line01
+    100034: Line02
+    100036: lun41
+    100038: lun42
+    100040: lun43
+    100042: lun44
+    100044: lun45
+    100046: lun46
+    100048: lun47
+    100050: lun48
+    100052: Object01
+    100054: Object02
+    100056: shubiao
+    100058: "\u5BF9\u8C61003"
+    100060: "\u5BF9\u8C6101"
+    100062: "\u5BF9\u8C6102"
+    400000: Box01
+    400002: Box02
+    400004: Box20
+    400006: Box21
+    400008: Box22
+    400010: cgaxis_electronics_25_01
+    400012: cgaxis_electronics_25_02
+    400014: //RootNode
+    400016: Group21
+    400018: Group22
+    400020: Group23
+    400022: Group24
+    400024: 'jianpan '
+    400026: LCD_obj_04
+    400028: LCD_obj_05
+    400030: LCD_obj_06
+    400032: Line01
+    400034: Line02
+    400036: lun41
+    400038: lun42
+    400040: lun43
+    400042: lun44
+    400044: lun45
+    400046: lun46
+    400048: lun47
+    400050: lun48
+    400052: Object01
+    400054: Object02
+    400056: shubiao
+    400058: "\u5BF9\u8C61003"
+    400060: "\u5BF9\u8C6101"
+    400062: "\u5BF9\u8C6102"
+    2300000: Box01
+    2300002: Box02
+    2300004: Box20
+    2300006: Box21
+    2300008: Box22
+    2300010: cgaxis_electronics_25_01
+    2300012: cgaxis_electronics_25_02
+    2300014: LCD_obj_04
+    2300016: LCD_obj_05
+    2300018: LCD_obj_06
+    2300020: Line01
+    2300022: Line02
+    2300024: lun41
+    2300026: lun42
+    2300028: lun43
+    2300030: lun44
+    2300032: lun45
+    2300034: lun46
+    2300036: lun47
+    2300038: lun48
+    2300040: Object01
+    2300042: Object02
+    2300044: "\u5BF9\u8C61003"
+    2300046: "\u5BF9\u8C6101"
+    2300048: "\u5BF9\u8C6102"
+    3300000: Box01
+    3300002: Box02
+    3300004: Box20
+    3300006: Box21
+    3300008: Box22
+    3300010: cgaxis_electronics_25_01
+    3300012: cgaxis_electronics_25_02
+    3300014: LCD_obj_04
+    3300016: LCD_obj_05
+    3300018: LCD_obj_06
+    3300020: Line01
+    3300022: Line02
+    3300024: lun41
+    3300026: lun42
+    3300028: lun43
+    3300030: lun44
+    3300032: lun45
+    3300034: lun46
+    3300036: lun47
+    3300038: lun48
+    3300040: Object01
+    3300042: Object02
+    3300044: "\u5BF9\u8C61003"
+    3300046: "\u5BF9\u8C6101"
+    3300048: "\u5BF9\u8C6102"
+    4300000: Box01
+    4300002: "\u5BF9\u8C6101"
+    4300004: Box02
+    4300006: Box20
+    4300008: "\u5BF9\u8C6102"
+    4300010: Box21
+    4300012: Box22
+    4300014: lun41
+    4300016: lun42
+    4300018: lun43
+    4300020: lun44
+    4300022: lun45
+    4300024: lun46
+    4300026: lun47
+    4300028: lun48
+    4300030: Object01
+    4300032: Object02
+    4300034: cgaxis_electronics_25_02
+    4300036: cgaxis_electronics_25_01
+    4300038: Line01
+    4300040: Line02
+    4300042: LCD_obj_05
+    4300044: LCD_obj_04
+    4300046: LCD_obj_06
+    4300048: "\u5BF9\u8C61003"
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

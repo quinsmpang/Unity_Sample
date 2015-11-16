@@ -1,0 +1,17 @@
+Name,Menu,Window,MCN
+GameMeasure,btnExposureSuit,ExposureSuit,护具
+GameMeasure,btnShelfMeasure,ShelfMeasure,工具架
+GameMeasure,btnComputer,-1,电脑屏幕
+GameMeasure,btnCabinet,Cabinet,工具柜
+GameMeasure,btnControl,Control,控制器
+GameMeasure,btnSetting,Setting,设置
+GameRepair,btnExposureSuit,ExposureSuit,护具
+GameRepair,btnShelfRepair,ShelfRepair,工具架
+GameRepair,btnShaper,Shaper,整形机
+GameRepair,btnDesk,Desk,工具台
+GameRepair,btnSetting,Setting,设置
+GameChange,btnExposureSuit,ExposureSuit,护具
+GameChange,btnSetting,Setting,设置
+GameChange,btnMIGWelder,MIGWelder,二保焊
+GameChange,btnERW,ERW,电阻焊
+GameChange,btnCabinetChange,CabinetChange,工具柜
