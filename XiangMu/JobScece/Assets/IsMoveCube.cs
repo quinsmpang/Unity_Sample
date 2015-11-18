@@ -13,7 +13,7 @@ public class IsMoveCube : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        Debug.Log("Hello Word");
     }
 
     // Update is called once per frame
