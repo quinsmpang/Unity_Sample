@@ -470,8 +470,6 @@ namespace SimpleFramework
                     break;
                 case RuntimePlatform.WebGLPlayer:
                     break;
-                case RuntimePlatform.WiiU:
-                    break;
                 case RuntimePlatform.WindowsEditor:
                     break;
                 case RuntimePlatform.WindowsPlayer:
