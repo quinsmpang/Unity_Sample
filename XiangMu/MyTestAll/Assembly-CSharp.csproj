@@ -267,10 +267,10 @@
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Excel">
- <HintPath>E:/Unity_Project/MyTestAll/Assets/Excel.dll</HintPath>
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/Excel.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>E:/Unity_Project/MyTestAll/Assets/System.Data.dll</HintPath>
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/System.Data.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

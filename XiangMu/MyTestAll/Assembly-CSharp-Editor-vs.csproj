@@ -167,19 +167,13 @@
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>E:/Unity_Project/MyTestAll/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>E:/Unity_Project/MyTestAll/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Excel">
- <HintPath>E:/Unity_Project/MyTestAll/Assets/Excel.dll</HintPath>
- </Reference>
- <Reference Include="System.Data">
- <HintPath>E:/Unity_Project/MyTestAll/Assets/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -211,12 +205,16 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Excel">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/Excel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/System.Data.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
       <Project>{C579CA21-E807-814F-2C8F-F510433917AD}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{14B59150-A7C8-AACE-7C1E-479E065F60A3}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
