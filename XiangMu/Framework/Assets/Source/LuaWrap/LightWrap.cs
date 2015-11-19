@@ -9,11 +9,6 @@ public class LightWrap
 	{
 		LuaMethod[] regs = new LuaMethod[]
 		{
-			new LuaMethod("AddCommandBuffer", AddCommandBuffer),
-			new LuaMethod("RemoveCommandBuffer", RemoveCommandBuffer),
-			new LuaMethod("RemoveCommandBuffers", RemoveCommandBuffers),
-			new LuaMethod("RemoveAllCommandBuffers", RemoveAllCommandBuffers),
-			new LuaMethod("GetCommandBuffers", GetCommandBuffers),
 			new LuaMethod("GetLights", GetLights),
 			new LuaMethod("New", _CreateLight),
 			new LuaMethod("GetClassType", GetClassType),
@@ -38,7 +33,6 @@ public class LightWrap
 			new LuaField("renderMode", get_renderMode, set_renderMode),
 			new LuaField("alreadyLightmapped", get_alreadyLightmapped, set_alreadyLightmapped),
 			new LuaField("cullingMask", get_cullingMask, set_cullingMask),
-			new LuaField("commandBufferCount", get_commandBufferCount, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Light", typeof(Light), regs, fields, typeof(Behaviour));
@@ -457,30 +451,6 @@ public class LightWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_commandBufferCount(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Light obj = (Light)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name commandBufferCount");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index commandBufferCount on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.commandBufferCount);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_type(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -862,58 +832,6 @@ public class LightWrap
 
 		obj.cullingMask = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int AddCommandBuffer(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 3);
-		Light obj = (Light)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Light");
-		UnityEngine.Rendering.LightEvent arg0 = (UnityEngine.Rendering.LightEvent)LuaScriptMgr.GetNetObject(L, 2, typeof(UnityEngine.Rendering.LightEvent));
-		UnityEngine.Rendering.CommandBuffer arg1 = (UnityEngine.Rendering.CommandBuffer)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.CommandBuffer));
-		obj.AddCommandBuffer(arg0,arg1);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int RemoveCommandBuffer(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 3);
-		Light obj = (Light)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Light");
-		UnityEngine.Rendering.LightEvent arg0 = (UnityEngine.Rendering.LightEvent)LuaScriptMgr.GetNetObject(L, 2, typeof(UnityEngine.Rendering.LightEvent));
-		UnityEngine.Rendering.CommandBuffer arg1 = (UnityEngine.Rendering.CommandBuffer)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.CommandBuffer));
-		obj.RemoveCommandBuffer(arg0,arg1);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int RemoveCommandBuffers(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		Light obj = (Light)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Light");
-		UnityEngine.Rendering.LightEvent arg0 = (UnityEngine.Rendering.LightEvent)LuaScriptMgr.GetNetObject(L, 2, typeof(UnityEngine.Rendering.LightEvent));
-		obj.RemoveCommandBuffers(arg0);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int RemoveAllCommandBuffers(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 1);
-		Light obj = (Light)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Light");
-		obj.RemoveAllCommandBuffers();
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int GetCommandBuffers(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		Light obj = (Light)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Light");
-		UnityEngine.Rendering.LightEvent arg0 = (UnityEngine.Rendering.LightEvent)LuaScriptMgr.GetNetObject(L, 2, typeof(UnityEngine.Rendering.LightEvent));
-		UnityEngine.Rendering.CommandBuffer[] o = obj.GetCommandBuffers(arg0);
-		LuaScriptMgr.PushArray(L, o);
-		return 1;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]

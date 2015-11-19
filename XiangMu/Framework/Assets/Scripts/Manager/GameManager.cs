@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using LuaInterface;
 using System.Reflection;
 using System.IO;
-using Junfine.Debuger;
+//using Junfine.Debuger;
 
 #if UNITY_EDITOR
 using UnityEditor;

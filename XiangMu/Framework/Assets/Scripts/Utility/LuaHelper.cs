@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using LuaInterface;
 using System;
-using Junfine.Debuger;
+//using Junfine.Debuger;
 using SimpleFramework.Manager;
 
 namespace SimpleFramework {

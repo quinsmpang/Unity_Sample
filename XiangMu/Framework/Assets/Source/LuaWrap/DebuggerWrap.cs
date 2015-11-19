@@ -14,7 +14,12 @@ public class DebuggerWrap
 			new LuaMethod("GetClassType", GetClassType),
 		};
 
-		LuaScriptMgr.RegisterLib(L, "Debugger", regs);
+		LuaField[] fields = new LuaField[]
+		{
+			new LuaField("IsDebug", get_IsDebug, set_IsDebug),
+		};
+
+		LuaScriptMgr.RegisterLib(L, "Debugger", typeof(Debugger), regs, fields, null);
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
@@ -31,6 +36,20 @@ public class DebuggerWrap
 	{
 		LuaScriptMgr.Push(L, classType);
 		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_IsDebug(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Debugger.IsDebug);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_IsDebug(IntPtr L)
+	{
+		Debugger.IsDebug = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]

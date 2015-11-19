@@ -3,21 +3,25 @@ using System.Collections;
 
 public static class Debugger
 {
+    public static bool IsDebug = true;
     public static void Log(string str, params object[] args)
     {
         str = string.Format(str, args);
-        Debug.Log(str);
+        if (IsDebug)
+            Debug.Log(str);
     }
 
     public static void LogWarning(string str, params object[] args)
     {
         str = string.Format(str, args);
-        Debug.LogWarning(str);
+        if (IsDebug)
+            Debug.LogWarning(str);
     }
 
     public static void LogError(string str, params object[] args)
     {
         str = string.Format(str, args);
-        Debug.LogError(str);
+        if (IsDebug)
+            Debug.LogError(str);
     }
 }

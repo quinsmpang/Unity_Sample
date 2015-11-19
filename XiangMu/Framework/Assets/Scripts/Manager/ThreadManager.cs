@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Threading;
 using System.Collections.Generic;
-using Junfine.Debuger;
+//using Junfine.Debuger;
 using System.IO;
 using System.Diagnostics;
 using System.Net;
@@ -132,7 +132,7 @@ namespace SimpleFramework.Manager {
         /// 调用方法
         /// </summary>
         void OnExtractFile(List<object> evParams) {
-            Debuger.LogWarning("Thread evParams: >>" + evParams.Count);
+            Debugger.LogWarning("Thread evParams: >>" + evParams.Count);
 
             ///------------------通知更新面板解压完成--------------------
             NotiData data = new NotiData(NotiConst.UPDATE_DOWNLOAD, null);

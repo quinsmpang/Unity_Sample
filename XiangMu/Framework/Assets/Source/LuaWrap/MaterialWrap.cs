@@ -28,7 +28,6 @@ public class MaterialWrap
 			new LuaMethod("SetBuffer", SetBuffer),
 			new LuaMethod("HasProperty", HasProperty),
 			new LuaMethod("GetTag", GetTag),
-			new LuaMethod("SetOverrideTag", SetOverrideTag),
 			new LuaMethod("Lerp", Lerp),
 			new LuaMethod("SetPass", SetPass),
 			new LuaMethod("CopyPropertiesFromMaterial", CopyPropertiesFromMaterial),
@@ -71,6 +70,13 @@ public class MaterialWrap
 		else if (count == 1 && LuaScriptMgr.CheckTypes(L, 1, typeof(Shader)))
 		{
 			Shader arg0 = (Shader)LuaScriptMgr.GetUnityObject(L, 1, typeof(Shader));
+			Material obj = new Material(arg0);
+			LuaScriptMgr.Push(L, obj);
+			return 1;
+		}
+		else if (count == 1 && LuaScriptMgr.CheckTypes(L, 1, typeof(string)))
+		{
+			string arg0 = LuaScriptMgr.GetString(L, 1);
 			Material obj = new Material(arg0);
 			LuaScriptMgr.Push(L, obj);
 			return 1;
@@ -961,17 +967,6 @@ public class MaterialWrap
 			LuaDLL.luaL_error(L, "invalid arguments to method: Material.GetTag");
 		}
 
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int SetOverrideTag(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 3);
-		Material obj = (Material)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Material");
-		string arg0 = LuaScriptMgr.GetLuaString(L, 2);
-		string arg1 = LuaScriptMgr.GetLuaString(L, 3);
-		obj.SetOverrideTag(arg0,arg1);
 		return 0;
 	}
 

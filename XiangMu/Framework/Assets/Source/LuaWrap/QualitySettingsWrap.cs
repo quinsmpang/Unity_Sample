@@ -25,7 +25,6 @@ public class QualitySettingsWrap
 			new LuaField("shadowProjection", get_shadowProjection, set_shadowProjection),
 			new LuaField("shadowCascades", get_shadowCascades, set_shadowCascades),
 			new LuaField("shadowDistance", get_shadowDistance, set_shadowDistance),
-			new LuaField("shadowNearPlaneOffset", get_shadowNearPlaneOffset, set_shadowNearPlaneOffset),
 			new LuaField("shadowCascade2Split", get_shadowCascade2Split, set_shadowCascade2Split),
 			new LuaField("shadowCascade4Split", get_shadowCascade4Split, set_shadowCascade4Split),
 			new LuaField("masterTextureLimit", get_masterTextureLimit, set_masterTextureLimit),
@@ -107,13 +106,6 @@ public class QualitySettingsWrap
 	static int get_shadowDistance(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, QualitySettings.shadowDistance);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_shadowNearPlaneOffset(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.shadowNearPlaneOffset);
 		return 1;
 	}
 
@@ -254,13 +246,6 @@ public class QualitySettingsWrap
 	static int set_shadowDistance(IntPtr L)
 	{
 		QualitySettings.shadowDistance = (float)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_shadowNearPlaneOffset(IntPtr L)
-	{
-		QualitySettings.shadowNearPlaneOffset = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 

@@ -32,7 +32,7 @@ public class RendererWrap
 			new LuaField("sharedMaterials", get_sharedMaterials, set_sharedMaterials),
 			new LuaField("bounds", get_bounds, null),
 			new LuaField("lightmapIndex", get_lightmapIndex, set_lightmapIndex),
-			new LuaField("realtimeLightmapIndex", get_realtimeLightmapIndex, set_realtimeLightmapIndex),
+			new LuaField("realtimeLightmapIndex", get_realtimeLightmapIndex, null),
 			new LuaField("lightmapScaleOffset", get_lightmapScaleOffset, set_lightmapScaleOffset),
 			new LuaField("realtimeLightmapScaleOffset", get_realtimeLightmapScaleOffset, set_realtimeLightmapScaleOffset),
 			new LuaField("isVisible", get_isVisible, null),
@@ -792,30 +792,6 @@ public class RendererWrap
 		}
 
 		obj.lightmapIndex = (int)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_realtimeLightmapIndex(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name realtimeLightmapIndex");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index realtimeLightmapIndex on a nil value");
-			}
-		}
-
-		obj.realtimeLightmapIndex = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 

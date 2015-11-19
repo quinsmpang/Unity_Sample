@@ -13,7 +13,6 @@ public class ApplicationWrap
 			new LuaMethod("LoadLevel", LoadLevel),
 			new LuaMethod("LoadLevelAsync", LoadLevelAsync),
 			new LuaMethod("LoadLevelAdditiveAsync", LoadLevelAdditiveAsync),
-			new LuaMethod("UnloadLevel", UnloadLevel),
 			new LuaMethod("LoadLevelAdditive", LoadLevelAdditive),
 			new LuaMethod("GetStreamProgressForLevel", GetStreamProgressForLevel),
 			new LuaMethod("CanStreamedLevelBeLoaded", CanStreamedLevelBeLoaded),
@@ -31,6 +30,7 @@ public class ApplicationWrap
 		{
 			new LuaField("loadedLevel", get_loadedLevel, null),
 			new LuaField("loadedLevelName", get_loadedLevelName, null),
+			new LuaField("isLoadingLevel", get_isLoadingLevel, null),
 			new LuaField("levelCount", get_levelCount, null),
 			new LuaField("streamedBytes", get_streamedBytes, null),
 			new LuaField("isPlaying", get_isPlaying, null),
@@ -58,12 +58,10 @@ public class ApplicationWrap
 			new LuaField("webSecurityHostUrl", get_webSecurityHostUrl, null),
 			new LuaField("targetFrameRate", get_targetFrameRate, set_targetFrameRate),
 			new LuaField("systemLanguage", get_systemLanguage, null),
-			new LuaField("stackTraceLogType", get_stackTraceLogType, set_stackTraceLogType),
 			new LuaField("backgroundLoadingPriority", get_backgroundLoadingPriority, set_backgroundLoadingPriority),
 			new LuaField("internetReachability", get_internetReachability, null),
 			new LuaField("genuine", get_genuine, null),
 			new LuaField("genuineCheckAvailable", get_genuineCheckAvailable, null),
-			new LuaField("isShowingSplashScreen", get_isShowingSplashScreen, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Application", typeof(Application), regs, fields, typeof(object));
@@ -108,6 +106,13 @@ public class ApplicationWrap
 	static int get_loadedLevelName(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, Application.loadedLevelName);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_isLoadingLevel(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Application.isLoadingLevel);
 		return 1;
 	}
 
@@ -301,13 +306,6 @@ public class ApplicationWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_stackTraceLogType(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, Application.stackTraceLogType);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_backgroundLoadingPriority(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, Application.backgroundLoadingPriority);
@@ -336,13 +334,6 @@ public class ApplicationWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_isShowingSplashScreen(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, Application.isShowingSplashScreen);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_runInBackground(IntPtr L)
 	{
 		Application.runInBackground = LuaScriptMgr.GetBoolean(L, 3);
@@ -353,13 +344,6 @@ public class ApplicationWrap
 	static int set_targetFrameRate(IntPtr L)
 	{
 		Application.targetFrameRate = (int)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_stackTraceLogType(IntPtr L)
-	{
-		Application.stackTraceLogType = (StackTraceLogType)LuaScriptMgr.GetNetObject(L, 3, typeof(StackTraceLogType));
 		return 0;
 	}
 
@@ -460,33 +444,6 @@ public class ApplicationWrap
 		else
 		{
 			LuaDLL.luaL_error(L, "invalid arguments to method: Application.LoadLevelAdditiveAsync");
-		}
-
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int UnloadLevel(IntPtr L)
-	{
-		int count = LuaDLL.lua_gettop(L);
-
-		if (count == 1 && LuaScriptMgr.CheckTypes(L, 1, typeof(string)))
-		{
-			string arg0 = LuaScriptMgr.GetString(L, 1);
-			bool o = Application.UnloadLevel(arg0);
-			LuaScriptMgr.Push(L, o);
-			return 1;
-		}
-		else if (count == 1 && LuaScriptMgr.CheckTypes(L, 1, typeof(int)))
-		{
-			int arg0 = (int)LuaDLL.lua_tonumber(L, 1);
-			bool o = Application.UnloadLevel(arg0);
-			LuaScriptMgr.Push(L, o);
-			return 1;
-		}
-		else
-		{
-			LuaDLL.luaL_error(L, "invalid arguments to method: Application.UnloadLevel");
 		}
 
 		return 0;

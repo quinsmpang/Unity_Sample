@@ -11,6 +11,7 @@ public class TextureWrap
 		{
 			new LuaMethod("SetGlobalAnisotropicFilteringLimits", SetGlobalAnisotropicFilteringLimits),
 			new LuaMethod("GetNativeTexturePtr", GetNativeTexturePtr),
+			new LuaMethod("GetNativeTextureID", GetNativeTextureID),
 			new LuaMethod("New", _CreateTexture),
 			new LuaMethod("GetClassType", GetClassType),
 			new LuaMethod("__eq", Lua_Eq),
@@ -416,6 +417,16 @@ public class TextureWrap
 		LuaScriptMgr.CheckArgsCount(L, 1);
 		Texture obj = (Texture)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Texture");
 		IntPtr o = obj.GetNativeTexturePtr();
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int GetNativeTextureID(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		Texture obj = (Texture)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Texture");
+		int o = obj.GetNativeTextureID();
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}
