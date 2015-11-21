@@ -46,43 +46,87 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Necromancer\Necromancer GUI\GUITestScript.js" />
      <Compile Include="Assets\NewBehaviourScript.js" />
      <Compile Include="Assets\Rotate\Translate1.js" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\_README.txt" />
      <None Include="Assets\NGUI\ReadMe - 3.6.8.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Mobile Test\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Bark Example\Three NPCs Bark\_README.txt" />
      <None Include="Assets\Ghost\NewShader.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\iOS\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Computer\Bitwise Font\!license.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Computer\Typing.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Lua Example\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Bark Example\Bark Example.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Third Party Support\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Bark Example\Bark Conversation\_README.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Art\Sounds\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\DLLs\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Circle\Textures\_README.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Necromancer\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Multiple Database Example\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Bark Example\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Save Load Example\_README_FIRST_IMPORTANT!.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Bark Example\Three NPCs Bark\Three NPCs Bark.xml" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Shared Audio\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Camera Angle Studio\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Quick Start\Quick Start.xml" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Sequence Example\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Text Input Example\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Necromancer\Necromancer GUI\Kingthings.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Art\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
      <None Include="Assets\ChromakeyTransparent\ChromakeyTransparent.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Dialogue Database\Feature Demo.xml" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Quest Example\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
      <None Include="Assets\Gamelogic\定时器.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\iOS\link.xml" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Quick Start\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Documentation\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Necromancer\Necromancer GUI\Readme.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Scripts\Supplemental\Utility\_README.txt" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Scripts\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Feature Demo with Continue Button\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Wheel\_README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Menu Text Demo\Feature Demo With Menu Text.xml" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Shared Fonts\Orbitron\SIL Open Font License.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\Unity Dialogue UIs\Shared Textures\_README.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Prefabs\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Menu Text Demo\_README.txt" />
+     <None Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Articy Feature Demo\Articy Feature Demo.xml" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
  <Reference Include="UnityEngine.UI">
@@ -93,6 +137,12 @@
  </Reference>
  <Reference Include="System.Data">
  <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="LuaInterpreter">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/LiaoTian/Dialogue System/DLLs/LuaInterpreter.dll</HintPath>
+ </Reference>
+ <Reference Include="DialogueSystem">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/LiaoTian/Dialogue System/DLLs/DialogueSystem.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
