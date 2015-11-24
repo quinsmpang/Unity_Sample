@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MenuShouYeUI : MonoBehaviour {
     public GameObject xingWeiRenZhiTog;
@@ -36,6 +37,7 @@ public class MenuShouYeUI : MonoBehaviour {
         {
             Debugger.Log("生产实习");
             GameSceneUI.Instance.ChangeYeMian("shengchanshixi");
+            shengChanShiXiTog.GetComponent<Toggle>().isOn = false;
         }
     }
 }

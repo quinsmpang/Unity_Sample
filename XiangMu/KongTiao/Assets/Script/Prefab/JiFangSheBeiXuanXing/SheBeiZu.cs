@@ -6,15 +6,7 @@ using System;
 /// 用于管理单个的设备选择
 /// </summary>
 public class SheBeiZu : MonoBehaviour {
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
     /// <summary>
     /// 接收型号信息

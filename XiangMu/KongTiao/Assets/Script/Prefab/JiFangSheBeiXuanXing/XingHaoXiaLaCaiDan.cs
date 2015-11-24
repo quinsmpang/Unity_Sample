@@ -23,6 +23,7 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
     /// 下拉菜单中的按钮
     /// </summary>
     public GameObject[] ItemBtn;
+    public GameObject xingHaoGrid;
     /// <summary>
     /// 是否已经打开下拉菜单
     /// </summary>
@@ -34,6 +35,7 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         UGUIEventTriggerListener.Get(xiaLaBtn).onClick = XiaLaoButtonOnClick;
+        UGUIEventTriggerListener.Get(xingHaoGrid).onExit = xingHaoExitHandle;
         for (int i = 0; i < ItemBtn.Length; i++)
         {
             UGUIEventTriggerListener.Get(ItemBtn[i]).onClick += ItemButtonOnClick;
@@ -43,11 +45,7 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
         inputFileTex.GetComponent<InputField>().interactable = false;//禁止输入
         xiaLaGrid.SetActive(false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
     void XiaLaoButtonOnClick(GameObject btn)
     {
         xiaLaGrid.SetActive(!xiaLaGrid.activeSelf);
@@ -77,5 +75,9 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
     void InputFileOnSubmit(GameObject inp)
     {
         Debugger.Log(inp.GetComponent<InputField>().text+"------");
+    }
+    void xingHaoExitHandle(GameObject exi)
+    {
+        XiaLaoButtonOnClick(xiaLaBtn);
     }
 }

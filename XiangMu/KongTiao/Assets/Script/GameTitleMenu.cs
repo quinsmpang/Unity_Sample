@@ -34,6 +34,7 @@ public class GameTitleMenu : MonoBehaviour
     {
         if (btn == shouYeBtn)
         {
+            GameSceneUI.Instance.ChangeYeMian("shouye");
             Debugger.Log("首页");
         }
         if (btn == zhangHuMingBtn)

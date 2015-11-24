@@ -225,6 +225,12 @@
  <Reference Include="System.Data">
  <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/System.Data.dll</HintPath>
  </Reference>
+ <Reference Include="DialogueSystem">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/LiaoTian/Dialogue System/DLLs/DialogueSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="LuaInterpreter">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/LiaoTian/Dialogue System/DLLs/LuaInterpreter.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -254,12 +260,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="LuaInterpreter">
- <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/LiaoTian/Dialogue System/DLLs/LuaInterpreter.dll</HintPath>
- </Reference>
- <Reference Include="DialogueSystem">
- <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/MyTestAll/Assets/LiaoTian/Dialogue System/DLLs/DialogueSystem.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

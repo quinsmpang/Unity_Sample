@@ -19,7 +19,7 @@ public class GameSceneUI : MonoBehaviour {
         }
     }
 
-
+    public static string YuanYangDaShaXiangGuanXinXi = "项目名称：远洋大厦\n\n 项目地址：山东青岛\n\n 楼  层  数：地下3 地上29\n\n 建筑面积：62000㎡\n\n 地下面积：14655㎡\n\n 地上面积：47345㎡\n\n 气候条件：海洋性季风气候\n\n 办公层层高：2.7M\n\n";
     /// <summary>
     /// 标题
     /// </summary>
