@@ -46,27 +46,29 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\3D\LookAtCamera.cs" />
-     <Compile Include="Assets\Script\Collitor\Debugger.cs" />
-     <Compile Include="Assets\Script\Collitor\UGUIEventTriggerListener.cs" />
-     <Compile Include="Assets\Script\Collitor\texDebugLog.cs" />
-     <Compile Include="Assets\Script\GameSceneUI.cs" />
-     <Compile Include="Assets\Script\GameTitleMenu.cs" />
-     <Compile Include="Assets\Script\MenuSheJiWindows.cs" />
-     <Compile Include="Assets\Script\MenuShouYeUI.cs" />
-     <Compile Include="Assets\Script\MenuTweYeShiXiUI.cs" />
-     <Compile Include="Assets\Script\Prefab\JiFangBuZhi\NameData.cs" />
-     <Compile Include="Assets\Script\Prefab\JiFangSheBeiXuanXing\SheBeiZu.cs" />
-     <Compile Include="Assets\Script\Prefab\JiFangSheBeiXuanXing\TiaoHuanWeiZhi.cs" />
-     <Compile Include="Assets\Script\Prefab\JiFangSheBeiXuanXing\XingHaoDaKai.cs" />
-     <Compile Include="Assets\Script\Prefab\JiFangSheBeiXuanXing\XingHaoItem.cs" />
-     <Compile Include="Assets\Script\Prefab\JiFangSheBeiXuanXing\XingHaoXiaLaCaiDan.cs" />
-     <Compile Include="Assets\Script\WindowS\SheBeiXuanXingWin.cs" />
-     <Compile Include="Assets\Script\WindowS\SheBeiXxXiangXiXinXiWin.cs" />
-     <Compile Include="Assets\Script\WindowS\TuZhiChaKanWin.cs" />
-     <Compile Include="Assets\Script\WindowS\TuZhiXinXiTIPS.cs" />
-     <Compile Include="Assets\Script\WindowS\XiangGuanJiSuanWin.cs" />
-     <Compile Include="Assets\Script\WindowS\XiangGuanJiSuanXiaoChuangKouWin.cs" />
+     <Compile Include="Assets\_Script\3D\LookAtCamera.cs" />
+     <Compile Include="Assets\_Script\Collitor\Debugger.cs" />
+     <Compile Include="Assets\_Script\Collitor\UGUIEventTriggerListener.cs" />
+     <Compile Include="Assets\_Script\Collitor\texDebugLog.cs" />
+     <Compile Include="Assets\_Script\GameSceneUI.cs" />
+     <Compile Include="Assets\_Script\GameTitleMenu.cs" />
+     <Compile Include="Assets\_Script\MenuSheJiWindows.cs" />
+     <Compile Include="Assets\_Script\MenuShouYeUI.cs" />
+     <Compile Include="Assets\_Script\MenuTweYeShiXiUI.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangBuZhi\NameData.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\JiFangSheBeiWin.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\MoXingNameData.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\SheBeiZu.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\TiaoHuanWeiZhi.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\XingHaoDaKai.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\XingHaoItem.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\XingHaoXiaLaCaiDan.cs" />
+     <Compile Include="Assets\_Script\WindowS\SheBeiXuanXingWin.cs" />
+     <Compile Include="Assets\_Script\WindowS\SheBeiXxXiangXiXinXiWin.cs" />
+     <Compile Include="Assets\_Script\WindowS\TuZhiChaKanWin.cs" />
+     <Compile Include="Assets\_Script\WindowS\TuZhiXinXiTIPS.cs" />
+     <Compile Include="Assets\_Script\WindowS\XiangGuanJiSuanWin.cs" />
+     <Compile Include="Assets\_Script\WindowS\XiangGuanJiSuanXiaoChuangKouWin.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
