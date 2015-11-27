@@ -18,6 +18,7 @@ public class XiangGuanJiSuanWin : MonoBehaviour {
     public GameObject JSFZ;
     public GameObject JSJG;
     public GameObject YSSJ;
+    public GameObject XGK;
     private GameObject tempGame;
 	// Use this for initialization
 	void Start () {
@@ -59,6 +60,7 @@ public class XiangGuanJiSuanWin : MonoBehaviour {
         }
         if (tempGame!=null)
         {
+            XGK.SetActive(true);
             tempGame.SetActive(true);
         }
     }

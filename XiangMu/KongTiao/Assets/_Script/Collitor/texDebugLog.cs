@@ -25,12 +25,4 @@ public class texDebugLog : MonoBehaviour {
     {
         gameObject.GetComponent<Text>().text = "<color=#"+colo+">" + obj.ToString() + "</color>";
     }
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

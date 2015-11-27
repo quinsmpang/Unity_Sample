@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{1F6F171D-CC0B-2F63-B537-D8603B509BF1}") = "KongTiao", "Assembly-CSharp-firstpass-vs.csproj", "{D2C25E50-5F79-2C1C-2AFD-5A72CAE44772}"
+EndProject
 Project("{1F6F171D-CC0B-2F63-B537-D8603B509BF1}") = "KongTiao", "Assembly-CSharp-vs.csproj", "{B24EA2E9-2DBB-78FF-8A6E-BE00A759C1AD}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2C25E50-5F79-2C1C-2AFD-5A72CAE44772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C25E50-5F79-2C1C-2AFD-5A72CAE44772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C25E50-5F79-2C1C-2AFD-5A72CAE44772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C25E50-5F79-2C1C-2AFD-5A72CAE44772}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B24EA2E9-2DBB-78FF-8A6E-BE00A759C1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B24EA2E9-2DBB-78FF-8A6E-BE00A759C1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24EA2E9-2DBB-78FF-8A6E-BE00A759C1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																	GlobalSection(MonoDevelopProperties) = preSolution
+																																																																												GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -9,18 +9,14 @@ using UnityEngine.UI;
 public class SheBeiZu : MonoBehaviour
 {
     #region 以下变量均为访问方便设置公开, 并不可以在外部赋值
-    public bool IsXingHao = false;
-    public bool IsNum = false;
-    public string XH;
-    public int NUM;
+    public SheBeiZuData SBZ = new SheBeiZuData();
     #endregion
     /// <summary>
     /// 接收型号信息
     /// </summary>
     public void SetInputXingHao(string xh)
     {
-        IsXingHao = true;
-        XH = xh;
+        SBZ.XH = xh;
         Debugger.Log(xh);
     }
     /// <summary>
@@ -31,9 +27,8 @@ public class SheBeiZu : MonoBehaviour
     {
         try
         {
-            IsNum = true;
             int nums = int.Parse(num);
-            NUM = nums;
+            SBZ.NUM = nums;
             Debugger.Log(nums);
         }
         catch (Exception e)
@@ -47,9 +42,25 @@ public class SheBeiZu : MonoBehaviour
         transform.FindChild("XingHao").FindChild("XingHaoInput").GetComponent<InputField>().text = "自定义";
         transform.FindChild("ShuLiang").FindChild("ShuLiangInput").GetComponent<InputField>().interactable = false;
         transform.FindChild("ShuLiang").FindChild("ShuLiangInput").GetComponent<InputField>().text = "自定义";
-        IsXingHao = false;
-        IsNum = false;
-        XH = "";
-        NUM = 0;
+        SBZ = null;
+        SBZ = new SheBeiZuData();
+    }
+    public void TIPS()
+    {
+        StartCoroutine(SSFG());
+    }
+    IEnumerator SSFG()
+    {
+        bool ison= transform.FindChild("Name").GetComponent<Toggle>().isOn;
+        yield return null;
+        transform.FindChild("Name").GetComponent<Toggle>().isOn = !ison;
+        yield return new WaitForSeconds(0.2f);
+        transform.FindChild("Name").GetComponent<Toggle>().isOn = ison;
+        yield return new WaitForSeconds(0.2f);
+        transform.FindChild("Name").GetComponent<Toggle>().isOn = !ison;
+        yield return new WaitForSeconds(0.2f);
+        transform.FindChild("Name").GetComponent<Toggle>().isOn = ison;
+        yield return new WaitForSeconds(0.2f);
+        transform.FindChild("Name").GetComponent<Toggle>().isOn = true;
     }
 }

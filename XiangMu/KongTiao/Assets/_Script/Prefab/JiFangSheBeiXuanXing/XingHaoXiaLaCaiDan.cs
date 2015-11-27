@@ -28,6 +28,7 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
     /// 是否已经打开下拉菜单
     /// </summary>
     private bool IsDown = false;
+    private string tempInput = "";
     void Awake()
     {
         
@@ -40,7 +41,7 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
         {
             UGUIEventTriggerListener.Get(ItemBtn[i]).onClick += ItemButtonOnClick;
         }
-        UGUIEventTriggerListener.Get(inputFileTex).onSubMit = InputFileOnSubmit;
+        UGUIEventTriggerListener.Get(inputFileTex).onUpdateSelect = InputFileOnSubmit;
         //inputFileTex.GetComponent<InputField>().MoveTextEnd
         inputFileTex.GetComponent<InputField>().interactable = false;//禁止输入
         xiaLaGrid.SetActive(false);
@@ -74,7 +75,20 @@ public class XingHaoXiaLaCaiDan : MonoBehaviour {
     }
     void InputFileOnSubmit(GameObject inp)
     {
-        Debugger.Log(inp.GetComponent<InputField>().text+"------");
+        if (tempInput != inputFileTex.GetComponent<InputField>().text)
+        {
+            Debugger.Log(inp.GetComponent<InputField>().text + "------");
+            if (IsXingHao)
+            {
+                transform.parent.GetComponent<SheBeiZu>().SetInputXingHao(inputFileTex.GetComponent<InputField>().text);
+            }
+            else
+            {
+                transform.parent.GetComponent<SheBeiZu>().SetInputNum(inputFileTex.GetComponent<InputField>().text);
+            }
+            tempInput = inputFileTex.GetComponent<InputField>().text;
+        }
+        //inputFileTex.GetComponent<InputField>().text = btn.GetComponent<XingHaoItem>().names;
     }
     void xingHaoExitHandle(GameObject exi)
     {

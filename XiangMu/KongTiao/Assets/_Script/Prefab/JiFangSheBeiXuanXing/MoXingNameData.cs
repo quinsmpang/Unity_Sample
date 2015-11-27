@@ -6,6 +6,7 @@ public class MoXingNameData : MonoBehaviour
 {
 
     private Text moxingName;
+    public string names;
     public string JiShao;
     // Use this for initialization
     void Start()

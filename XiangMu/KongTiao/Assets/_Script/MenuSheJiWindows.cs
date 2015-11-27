@@ -83,6 +83,7 @@ public class MenuSheJiWindows : MonoBehaviour
     }
     void ToggleOnClick(GameObject _tog)
     {
+        GameSceneUI.Instance.SetActiveFirstMan(JiFangBuZhiBtn.GetComponent<Toggle>().isOn);
         if (tempWin != null)
         {
             tempWin.SetActive(false);
@@ -103,14 +104,16 @@ public class MenuSheJiWindows : MonoBehaviour
         if (_tog == JiFangBuZhiBtn)
         {
             ChangeTempWin(JiFangBuZhiWin, JiFangBuZhiBtn);
+            JiFangBuZhiWin.GetComponent<JiFangBuZhiWin>().JFBZ(true);
         }
         if (_tog == BuZhiChaCuoBtn)
         {
-            ChangeTempWin(BuZhiChaCuoWin, BuZhiChaCuoBtn);
+            ChangeTempWin(JiFangBuZhiWin, BuZhiChaCuoBtn);
+            JiFangBuZhiWin.GetComponent<JiFangBuZhiWin>().JFBZ(false);
         }
         if (_tog == XiTongYunXingBtn)
         {
-            ChangeTempWin(BuZhiChaCuoWin, XiTongYunXingBtn);
+            ChangeTempWin(XiTongYunXingWin, XiTongYunXingBtn);
         }
         if (_tog == DianXingGuZhangBtn)
         {
@@ -137,6 +140,24 @@ public class MenuSheJiWindows : MonoBehaviour
         {
             tempWin = null;
             to.GetComponent<Toggle>().isOn = false;
+        }
+        if (to == BuZhiChaCuoBtn || to == JiFangBuZhiBtn)
+        {
+            //tempWin = go;
+            //if (!to.GetComponent<Toggle>().isOn)
+            //{
+                
+            //    tempWin.SetActive(true);
+            //    to.GetComponent<Toggle>().isOn = true;
+            //}
+            //else
+            //{
+            //    tempWin.SetActive(false);
+            //    to.GetComponent<Toggle>().isOn = false;
+            //}
+            tempWin = go;
+            tempWin.SetActive(true);
+            to.GetComponent<Toggle>().isOn = true;
         }
     }
     public void FalseToggle()

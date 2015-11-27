@@ -46,7 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Script\3D\Jiantou.cs" />
      <Compile Include="Assets\_Script\3D\LookAtCamera.cs" />
+     <Compile Include="Assets\_Script\3D\XiTongAnZhuang.cs" />
+     <Compile Include="Assets\_Script\3D\XiTongYunXingQieHuan.cs" />
+     <Compile Include="Assets\_Script\Camera\FollowFirst.cs" />
      <Compile Include="Assets\_Script\Collitor\Debugger.cs" />
      <Compile Include="Assets\_Script\Collitor\UGUIEventTriggerListener.cs" />
      <Compile Include="Assets\_Script\Collitor\texDebugLog.cs" />
@@ -55,7 +59,12 @@
      <Compile Include="Assets\_Script\MenuSheJiWindows.cs" />
      <Compile Include="Assets\_Script\MenuShouYeUI.cs" />
      <Compile Include="Assets\_Script\MenuTweYeShiXiUI.cs" />
+     <Compile Include="Assets\_Script\ModelData\SheBeiZuData.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangBuZhi\BtnColliterScroll.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangBuZhi\JiFangBuZhiWin.cs" />
      <Compile Include="Assets\_Script\Prefab\JiFangBuZhi\NameData.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangBuZhi\RightChange.cs" />
+     <Compile Include="Assets\_Script\Prefab\JiFangBuZhi\ScrollRectLeftOrRight.cs" />
      <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\JiFangSheBeiWin.cs" />
      <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\MoXingNameData.cs" />
      <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\SheBeiZu.cs" />
@@ -63,15 +72,24 @@
      <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\XingHaoDaKai.cs" />
      <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\XingHaoItem.cs" />
      <Compile Include="Assets\_Script\Prefab\JiFangSheBeiXuanXing\XingHaoXiaLaCaiDan.cs" />
+     <Compile Include="Assets\_Script\Prefab\XiTongYunXingWin\XiTongYunXingWin.cs" />
+     <Compile Include="Assets\_Script\TestScript\Anzhuang.cs" />
      <Compile Include="Assets\_Script\WindowS\SheBeiXuanXingWin.cs" />
      <Compile Include="Assets\_Script\WindowS\SheBeiXxXiangXiXinXiWin.cs" />
      <Compile Include="Assets\_Script\WindowS\TuZhiChaKanWin.cs" />
      <Compile Include="Assets\_Script\WindowS\TuZhiXinXiTIPS.cs" />
      <Compile Include="Assets\_Script\WindowS\XiangGuanJiSuanWin.cs" />
      <Compile Include="Assets\_Script\WindowS\XiangGuanJiSuanXiaoChuangKouWin.cs" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>E:/GitHubWorkSpace/SampleuUnity/XiangMu/KongTiao/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/UnitySetUp/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{D2C25E50-5F79-2C1C-2AFD-5A72CAE44772}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

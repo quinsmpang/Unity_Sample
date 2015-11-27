@@ -64,6 +64,7 @@
      <Compile Include="Assets\Gamelogic\Clock.cs" />
      <Compile Include="Assets\Gamelogic\ClockTest.cs" />
      <Compile Include="Assets\Ghost\Ghost.cs" />
+     <Compile Include="Assets\InputField\InputFields.cs" />
      <Compile Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\FeatureDemo.cs" />
      <Compile Include="Assets\LiaoTian\Dialogue System\Examples\Feature Demo\Multiple Database Example\AddRemoveDatabaseTrigger.cs" />
      <Compile Include="Assets\LiaoTian\Dialogue System\Examples\Lua Example\LuaExample.cs" />
@@ -250,6 +251,7 @@
      <Compile Include="Assets\UGUIEventTriggerListener.cs" />
      <Compile Include="Assets\XunHuan\UIComUnList.cs" />
      <Compile Include="Assets\XunHuan\UIFirst.cs" />
+     <Compile Include="Assets\das.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />

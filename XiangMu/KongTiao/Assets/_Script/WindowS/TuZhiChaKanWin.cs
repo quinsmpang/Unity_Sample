@@ -87,7 +87,7 @@ public class TuZhiChaKanWin : MonoBehaviour
     {
         if (btn==btnTuZhiXinXi)
         {
-            TIPS.SetActive(true);
+           // TIPS.SetActive(true);
         }
     }
     void CloseBtnOnClick(GameObject btn)

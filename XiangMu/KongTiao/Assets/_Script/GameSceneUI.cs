@@ -40,6 +40,15 @@ public class GameSceneUI : MonoBehaviour {
     /// 机房总体设计
     /// </summary>
     public GameObject JiFangSheJiSceneUI;
+    /// <summary>
+    /// 大背景
+    /// </summary>
+    public GameObject GameUIBg;
+    /// <summary>
+    /// 角色控制器
+    /// </summary>
+    public GameObject firstMan;
+    public GameObject MainCarmera;
 
     /// <summary>
     /// 临时变量, 用来记录当前需要显示的是那一个页面
@@ -61,13 +70,16 @@ public class GameSceneUI : MonoBehaviour {
     {
         tempGameYeMian.SetActive(false);
         titleNameUI.text = "建筑环境与能源应用资源库";
+        GameUIBg.SetActive(false);
         switch (str)
         {
             case "shouye":
+                GameUIBg.SetActive(true);
                 tempGameYeMian = shouYeUI;
                 break;
             case "shengchanshixi":
                 tempGameYeMian = shengChanShiXiUI;
+                GameUIBg.SetActive(true);
                 titleNameUI.text = "建筑环境与能源应用--  中央空调企业案例";
                 break;
             case "jifangsheji":
@@ -76,5 +88,14 @@ public class GameSceneUI : MonoBehaviour {
                 break;
         }
         tempGameYeMian.SetActive(true);
+    }
+    /// <summary>
+    /// 控制角色是否可以运动
+    /// </summary>
+    /// <param name="b"></param>
+    public void SetActiveFirstMan(bool b)
+    {
+        //Debugger.Log("是否隐藏角色" + b);
+        //firstMan.SetActive(b);
     }
 }
